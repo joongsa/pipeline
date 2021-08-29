@@ -1,10 +1,20 @@
 pipeline {
     agent any
     stages {
-        stage('hello jk'){
+        stage('Ready'){
             steps {
-                echo 'hello jk'
-                print ('hello jk pipiline test')
+                echo 'Ready'
+            }
+
+        }
+        stage('Build'){
+            steps {
+                echo 'Build Jar'
+            }
+        }
+        stage('Deploy'){
+            steps {
+                echo 'Deploy AwS'
             }
         }
     }
